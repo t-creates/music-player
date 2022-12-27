@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* This is an example of how we can create custom tailwind classes */
+
+@layer utilities {
+  /* if you want to use normal css */
+  .square {
+    aspect-ratio: 1 / 1;
+  }
+  /* if you want to use tailwind utility classes */
+  .circle {
+    @apply rounded-full;
+  }
+}

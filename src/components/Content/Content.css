@@ -1,0 +1,40 @@
+.library{
+    top:50px;
+    left:200px;
+    bottom:62px;
+    display:table-column;
+    background: #171616;
+    z-index:1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width:initial;
+
+}
+.library-songs{
+    width: 175.5vh;
+    bottom:62px;
+    position:relative;
+    overflow:hidden;
+    backdrop-filter: blur 10px;
+    margin:0;
+    top:2px;
+
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    transition: background 0.8s ease;
+
+}
+img{
+    width: 10%;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: rgba(155,155,155,0.5) transparent;
+}
