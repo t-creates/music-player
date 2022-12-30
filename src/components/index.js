@@ -1,12 +1,25 @@
-/* eslint-disable import/no-cycle */
-export { default as PlayerLayout } from './PlayerLayout/PlayerLayout';
-export { default as Navbar } from './Navbar/Navbar';
-export { default as PlayerBar } from './Player/Player';
-export { default as Sidebar } from './Sidebar/Sidebar';
-export { default as SongsByGenre } from './SongsByGenre/SongsByGenre';
-export { default as Start } from './Start/Start';
-export { default as Content } from './Content/Content';
-export { default as SongList } from './SongList';
-export { default as ElementSelector } from './ElementSelector';
-export { default as Player } from './Player/Player';
+import Sidebar from './Sidebar';
+import Searchbar from './Searchbar';
+import SongCard from './SongCard';
+import TopPlay from './TopPlay';
+import ArtistCard from './ArtistCard';
+import DetailsHeader from './DetailsHeader';
+import SongBar from './SongBar';
+import RelatedSongs from './RelatedSongs';
+import MusicPlayer from './MusicPlayer';
+import Loader from './Loader';
+import Error from './Error';
 
+export {
+  TopPlay,
+  Sidebar,
+  SongCard,
+  Searchbar,
+  ArtistCard,
+  DetailsHeader,
+  SongBar,
+  RelatedSongs,
+  MusicPlayer,
+  Loader,
+  Error,
+};
