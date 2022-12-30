@@ -1,19 +1,28 @@
+import { useDispatch, useSelector } from 'react-redux';
+
 import { Error, Loader, SongCard } from '../components';
 import { genres } from '../assets/constants';
+import { useGetTopChartsQuery } from '../redux/services/shazamCore';
 
 const Discover = () => {
-  console.log(genres);
+  const dispatch = useDispatch();
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
+  const { data, isFetching, error } = useGetTopChartsQuery();
   const genreTitle = 'Pop';
+
+  if (isFetching) return <Loader title="Loading Songs..." />;
+
+  if (error) return <Error />;
 
   return (
     <div className="flex flex-col ">
-      <div className="w-full flex justify-between items-center sm:flex-col flex-row mt-4 mb-10">{/* // possible small breakpoint issue */}
+      <div className="w-full flex justify-between items-center flex-col sm:flex-row mt-4 mb-10">{/* // possible small breakpoint issue */}
         <h2 className="font-bold text-3xl text-white text-left">Discover {genreTitle}</h2>
         <select
           onChange={() => { }}
           value=""
-          className="bg-black text-gray-300 p-3 text-sm rounded-lg outline-none sm:mt-5 mt-0"> {/* Breakpoint issue */}
-        >
+          className="bg-black text-gray-300 p-3 text-sm rounded-lg outline-none mt-5 sm:mt-0"
+        > {/* Breakpoint issue */}
           {genres.map((genre) => (
             <option key={genre.value} value={genre.value}>
               {genre.title}
@@ -21,9 +30,16 @@ const Discover = () => {
           ))}
         </select>
       </div>
-      <div className="flex flex-wrap sm:justify-center justify-start gap-8"> {/* Breakpoint issue */}
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((song, i) => (
-          <SongCard key={song} song={song} i={i} />
+      <div className="flex flex-wrap justify-center sm:justify-start gap-8"> {/* Breakpoint issue */}
+        {data?.map((song, i) => (
+          <SongCard
+            key={song.key}
+            song={song}
+            i={i}
+            isPlaying={isPlaying}
+            activeSong={activeSong}
+            data={data}
+          />
         ))}
       </div>
     </div>
