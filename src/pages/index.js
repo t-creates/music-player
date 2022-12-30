@@ -1,6 +1,17 @@
-export { default as Home } from './Home';
-export { default as Explore } from './Explore/Explore';
-export { default as TopLocal } from './TopLocal';
-export { default as Artists } from './Artists';
-export { default as SongDetails } from './SongDetails';
-export { default as ArtistDetails } from './ArtistDetails';
+import Discover from './Discover';
+import TopArtists from './TopArtists';
+import ArtistDetails from './ArtistDetails';
+import SongDetails from './SongDetails';
+import Search from './Search';
+import TopCharts from './TopCharts';
+import AroundYou from './AroundYou';
+
+export {
+  Discover,
+  Search,
+  TopArtists,
+  ArtistDetails,
+  SongDetails,
+  TopCharts,
+  AroundYou,
+};
