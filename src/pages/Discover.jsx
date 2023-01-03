@@ -24,8 +24,8 @@ const Discover = () => {
           className="bg-black text-gray-300 p-3 text-sm rounded-lg outline-none mt-5 sm:mt-0"
         > {/* Breakpoint issue */}
           {genres.map((genre) => (
-            <option key={genre.value} value={genre.value}>
-              {genre.title}
+            <option key={genre?.value} value={genre?.value}>
+              {genre?.title}
             </option>
           ))}
         </select>
@@ -33,7 +33,7 @@ const Discover = () => {
       <div className="flex flex-wrap justify-center sm:justify-start gap-8"> {/* Breakpoint issue */}
         {data?.map((song, i) => (
           <SongCard
-            key={song.key}
+            key={song?.key}
             song={song}
             i={i}
             isPlaying={isPlaying}
