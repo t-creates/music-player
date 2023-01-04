@@ -1,6 +1,6 @@
-const Error = () => (
+const Error = ({ title }) => (
   <div className="w-full flex justify-center items-center">
-    <h1 className="font-bold text-2xl text-black mt-2">Something Went Wrong... Please Try Again</h1>
+    <h1 className="font-bold text-2xl text-black mt-2">{title}</h1>
   </div>
 );
 

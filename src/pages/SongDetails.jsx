@@ -23,14 +23,14 @@ const SongDetails = () => {
 
   if (isFetchingSongDetails || isFetchingRelatedSongs) return <Loader title="Searching Song Details" />;
 
-  if (error) return <Error />;
+  if (error) return <Error title="Something Went Wrong...." />;
 
   return (
-    <div>
+    <div className="flex flex-col">
       <DetailsHeader artist="" songData={songData} />
+
       <div className="mb-10">
         <h2 className="text-white text-3xl font-bold">Lyrics:</h2>
-
         <div className="mt-5">
           {songData?.sections[1].type === 'LYRICS'
             ? songData?.sections[1].text.map((line, i) => (
