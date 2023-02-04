@@ -56,8 +56,6 @@ const TopPlay = () => {
     dispatch(playPause(true));
   };
 
-  console.log(topPlays);
-
   return (
     <div ref={divRef} className="xl:ml-6 ml-0 xl:mb-0 mb-6 flex-1 flex flex-col max-w-full xl:max-w-[500px]">
       <div className="w-full flex flex-col">
