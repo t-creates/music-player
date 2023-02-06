@@ -54,14 +54,14 @@ Make sure you have all the necessary prerequisites installed on your system. Fol
 - Run the following command to clone the project from GitHub:
     
     ```bash
-    git clone https://github.com/JavaScript-Mastery-PRO/BitByBit_Lyriks.git
+    git clone https://github.com/t-creates/music-player.git
     ```
     
 - This will create a new directory called "BitByBit_Lyriks" in the current location, containing the code for the Lyrics project.
 - Navigate to the project directory by running the following command:
     
     ```bash
-    cd BitByBit_Lyriks
+    cd music-player
     ```
     
 - Run the following command to install the project's dependencies using npm:
@@ -70,7 +70,7 @@ Make sure you have all the necessary prerequisites installed on your system. Fol
     npm install
     ```
     
-- To use the Lyrics project, you must set up some environment variables on your development machine. Here are the steps to follow:
+- To use the Music Player project, you must set up some environment variables on your development machine. Here are the steps to follow:
     1. Create a **`.env`** file in the root of the project.
     2. Add the following variables to the **`.env`** file, replacing the placeholder values with your own:
     
@@ -89,7 +89,7 @@ Make sure you have all the necessary prerequisites installed on your system. Fol
     ```
     
 
-This will start the development server and open the Lyrics application in your default web browser.
+This will start the development server and open the Music Player application in your default web browser.
 
 ### Features
 
@@ -105,7 +105,7 @@ This will start the development server and open the Lyrics application in your d
 
 We welcome contributions to Lyrics! If you have an idea for a new feature, an improvement to an existing feature, or a bug fix, please open an issue to discuss it before submitting a pull request. This helps me to review and understand your changes more efficiently.
 
-To contribute code to Lyrics:
+To contribute code to Music Player:
 
 1. Fork the repository
 2. Create a new branch for your feature or bug fix
