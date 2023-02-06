@@ -1,136 +1,116 @@
-# Project Music Player
+# Music Player
 
-Develop an elegant React.js Music Application. 
+### Application Overview
 
-Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
+Music Player is a music application that allows users to view and listen to songs with their lyrics. The application provides a simple and intuitive interface for searching and streaming music, as well as displaying the lyrics for each song in real-time. It is a one-stop destination for all your music needs, offering a wide range of popular and lesser-known tracks from various artists and genres.
 
-# Contributing
+### Application in Action
 
-When contributing to this repository, please first discuss the change you wish to make via issue.
-Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+Visit the application live demo.
 
+<img width="1437" alt="Screenshot 2023-01-05 at 7 07 57 AM" src="https://user-images.githubusercontent.com/76760849/217043488-e838d9fe-d2dc-44b7-9418-527083ce4e0f.png">
 
-## System Requirements
+### Built With
 
-To get started with development, you need to install few tools
+This application is built using many in-demand technologies, including Next.js for server-rendered React apps, Redux Toolkit for managing application state, and Tailwind for rapid UI development. The application also utilizes the Shazam API to provide music recognition and discovery functionality. These technologies were carefully chosen to provide music lovers with a reliable and user-friendly experience.
 
-1. git 
-   
-   `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
+- **[Next.js](https://nextjs.org/)** - Next.js is a framework for building server-rendered or statically-exported React apps. It provides a set of tools and conventions for building scalable, high-performance web applications with React.
+- **[Redux Toolkit](https://redux-toolkit.js.org/)** - Redux Toolkit is a set of opinionated libraries and utilities for building Redux applications. It provides a simple and easy-to-use API for managing application state, as well as many other helpful utilities and features.
+- **[Tailwind](https://tailwindcss.com/)** - Tailwind is a utility-first CSS framework for rapidly building custom designs. It provides a set of low-level utility classes that can be combined to create complex, responsive layouts, and user interfaces.
+- **[Shazam API](https://rapidapi.com/tipsters/api/shazam-core/)** - The Shazam API is an API for accessing music recognition and discovery services. It allows developers to integrate Shazam's music recognition technology into their own applications and build new music-related experiences.
 
-   To check your version of git, run:
+### **Getting Started**
 
-   ```shell
-    git --version
-   ```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-2. node 
-   
-   `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
+****Prerequisites****
 
-   To check your version of node, run:
-
-   ```shell
-    node --version
-   ```
-
-3. npm
-  
-   `npm` version 5.6.1 or higher. You will have it after you install node.
-
-   To check your version of npm, run:
-
-   ```shell
-    npm --version
-   ```
-
-## Setup
-
-To set up a development environment, please follow these steps:
-
-1. Clone the repo
-
-   ```shell
-    git clone https://github.com/JavaScript-Mastery-PRO/project1_team4_repository.git
-   ```
-
-2. Change directory to the project directory
-
-    ```shell
-    cd project1_team4_repository
+- git
+    
+    If you want to clone the project from GitHub and work with it locally, you will need to have Git installed on your system. You can download and install Git from the official website (**[https://git-scm.com/](https://git-scm.com/)**).
+    
+- Node.js
+    
+    The application requires Node.js to be installed on your system in order to run. You can download and install the latest version of Node.js from the official website (**[https://nodejs.org/](https://nodejs.org/)**).
+    
+- npm (Node Package Manager)
+    
+    npm is the package manager for Node.js, and is used to manage the dependencies and packages required for your Next.js project. It is installed automatically when you install Node.js.
+    
+    To check if npm is installed on your system, you can open a terminal or command prompt and enter the following command:
+    
+    ```bash
+    npm -v
     ```
+    
 
-3. Install the dependencies
-   
-    ```shell
-     npm install
+Once you have these prerequisites in place, you can proceed to clone the project from GitHub using Git.
+
+****Installing****
+
+Make sure you have all the necessary prerequisites installed on your system. Follow the below steps to install the setup the project on your machine:
+
+- Open a terminal or command prompt and navigate to the directory where you want to clone the project.
+- Run the following command to clone the project from GitHub:
+    
+    ```bash
+    git clone https://github.com/JavaScript-Mastery-PRO/BitByBit_Lyriks.git
     ```
-
-    If you get an error, please check the console for more information.
-
-    If you don't get an error, you are ready to start development.
-
-4. Run the app
-   
-    ```shell
-    npm run dev
+    
+- This will create a new directory called "BitByBit_Lyriks" in the current location, containing the code for the Lyrics project.
+- Navigate to the project directory by running the following command:
+    
+    ```bash
+    cd BitByBit_Lyriks
     ```
+    
+- Run the following command to install the project's dependencies using npm:
+    
+    ```bash
+    npm install
+    ```
+    
+- To use the Lyrics project, you must set up some environment variables on your development machine. Here are the steps to follow:
+    1. Create a **`.env`** file in the root of the project.
+    2. Add the following variables to the **`.env`** file, replacing the placeholder values with your own:
+    
+    ```jsx
+    SHAZAM_API_KEY=<your-shazam-api-key>
+    ```
+    
+    1. Save the **`.env`** file.
+    
+    This environment variable is required for accessing the RapidAPI Shazam Core API, which is used to retrieve songs and their lyrics, as well as to search for and display top global songs, artists, and charts. Be sure to replace the placeholder value with your API key obtained from the RapidAPI Shazam Core service.
+    
+- Once the dependencies are installed, you can run the project locally by running the following command:
+    
+    ```bash
+    npm start
+    ```
+    
 
-    Project will be running in the browser.
+This will start the development server and open the Lyrics application in your default web browser.
 
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
 
-## Issues
+- A library of songs and lyrics: Browse and view the lyrics of a large selection of songs from various artists and genres.
+- Top songs and artists: A feature that showcases the most popular songs and artists currently trending or historically popular.
+- Country songs: Browse songs depending on the location
+- Albums: Browse and view the track lists and lyrics for various albums.
+- Search functionality: Search for specific songs or artists using keywords.
+- Audio playback: Stream or play songs directly
+- Mobile responsive: Optimized for use on mobile devices, with a layout and user interface that adjusts and scales appropriately to fit the screen size and resolution of the device being used.
 
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/orgs/JavaScript-Mastery-PRO/projects/8). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
+### Contributing
 
-Please try to create bug reports that are:
+We welcome contributions to Lyrics! If you have an idea for a new feature, an improvement to an existing feature, or a bug fix, please open an issue to discuss it before submitting a pull request. This helps me to review and understand your changes more efficiently.
 
-- _Reproducible._ Include steps to reproduce the problem.
-- _Specific._ Include as much detail as possible: which version, what environment, etc.
-- _Unique._ Do not duplicate existing opened issues.
-- _Scoped to a Single Bug._ One bug per report.
+To contribute code to Lyrics:
 
+1. Fork the repository
+2. Create a new branch for your feature or bug fix
+3. Commit your changes to the new branch
+4. Run the automated tests to ensure that your changes do not break any existing functionality
+5. Open a pull request back to the main repository, including a description of your changes and any relevant issue numbers
 
-## Pull Request
-
-There are 2 main work flows when dealing with pull requests:
-
-* Pull Request from a [forked repository](https://help.github.com/articles/fork-a-repo)
-* Pull Request from a branch within a repository
-
-Here we are going to focus on 2. Creating a Topical Branch:
-
-
-1. First, we will need to create a branch from the latest commit on master. Make sure your repository is up to date first using
-
-   ```bash
-    git pull origin main
-   ```
-
-   *Note:* `git pull` does a `git fetch` followed by a `git merge` to update the local repo with the remote repo. For a more detailed explanation, see [this stackoverflow post](http://stackoverflow.com/questions/292357/whats-the-difference-between-git-pull-and-git-fetch).
-
-2. To create a branch, use `git checkout -b <new-branch-name> [<base-branch-name>]`, where `base-branch-name` is optional and defaults to `main`. 
-   
-   Use a standard convention for branch names. For example, `<your-name>-dev`. It will be easier to track your pull requests if you use this convention.
-   
-   I'm going to create a new branch called `jsm-dev` from the `main` branch and push it to github.
-
-   ```bash
-    git checkout -b jsm-dev main
-    git push origin jsm-dev
-   ```
-
-3. To create a pull request, you must have changes committed to your new branch.
-
-4. Go to [Pull Requests](https://github.com/JavaScript-Mastery-PRO/project1_team4_repository/pulls) and click on the `New Pull Request` button.
-
-5. Select the `main` branch as the `base` branch and the `jsm-dev` branch as the `compare` branch.
-
-6. Follow the template and fill in the proper information for the pull request.
-
-7. Click on the `Submit` button.
-
-8. You have successfully created a pull request. Now wait for mentor approval. Once approved, you can merge the pull request.
-
-#
+Please ensure that your code follows the coding style and standards used in the rest of the project. Thank you for your contribution to Lyriks! We appreciate your efforts to help make this a great music application.
