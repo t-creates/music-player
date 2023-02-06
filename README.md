@@ -103,7 +103,7 @@ This will start the development server and open the Music Player application in 
 
 ### Contributing
 
-We welcome contributions to Lyrics! If you have an idea for a new feature, an improvement to an existing feature, or a bug fix, please open an issue to discuss it before submitting a pull request. This helps me to review and understand your changes more efficiently.
+We welcome contributions to Music Player! If you have an idea for a new feature, an improvement to an existing feature, or a bug fix, please open an issue to discuss it before submitting a pull request. This helps me to review and understand your changes more efficiently.
 
 To contribute code to Music Player:
 
